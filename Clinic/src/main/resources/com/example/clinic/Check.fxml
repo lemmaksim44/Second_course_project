@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="620.0" style="-fx-background-color: #0386bf;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.clinic.Check">
+    <children>
+        <AnchorPane layoutX="188.0" layoutY="77.0" prefHeight="400.0" prefWidth="620.0" style="-fx-background-color: #bce4f5;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="77.0">
+         <children>
+            <Label layoutX="264.0" layoutY="71.0" text="Ваши записи:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ListView fx:id="dateview" layoutX="215.0" layoutY="102.0" prefHeight="200.0" prefWidth="191.0" style="-fx-background-radius: 5;" />
+            <ListView fx:id="doctorview" layoutX="24.0" layoutY="102.0" prefHeight="200.0" prefWidth="191.0" style="-fx-background-radius: 5;" />
+            <ListView fx:id="timeview" layoutX="406.0" layoutY="102.0" prefHeight="200.0" prefWidth="191.0" style="-fx-background-radius: 5;" />
+            <TextField fx:id="client_phone" layoutX="236.0" layoutY="33.0" promptText="Телефон" />
+            <TextField fx:id="client_name" layoutX="45.0" layoutY="33.0" promptText="Фамилия Имя" />
+            <Button fx:id="check" layoutX="427.0" layoutY="33.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" style="-fx-background-radius: 15;" text="Проверить запись" />
+            <TextField fx:id="doctor_name" layoutX="45.0" layoutY="324.0" promptText="Врач" />
+            <TextField fx:id="date_recording" layoutX="236.0" layoutY="324.0" promptText="Дата &quot;2000-01-28&quot;" />
+            <TextField fx:id="time_recording" layoutX="427.0" layoutY="324.0" promptText="Время &quot;08:00&quot;" />
+            <Button fx:id="delete" layoutX="427.0" layoutY="375.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" style="-fx-background-radius: 15;" text="Удалить запись" />
+            <Button fx:id="go_back" layoutX="45.0" layoutY="375.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" style="-fx-background-radius: 15;" text="Назад" />
+         </children>
+        </AnchorPane>
+        <Label alignment="BASELINE_CENTER" layoutX="207.0" layoutY="14.0" text="Алгоритм здоровья">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Label>
+        <Label alignment="BASELINE_CENTER" layoutX="204.0" layoutY="48.0" text="лечебно-диагностический центр">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

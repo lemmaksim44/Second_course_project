@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="620.0" style="-fx-background-color: #0386bf;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.clinic.Home_window">
+   <children>
+      <AnchorPane layoutY="77.0" prefHeight="439.0" prefWidth="620.0" style="-fx-background-color: #bce4f5;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="77.0">
+         <children>
+            <Button fx:id="doctor2" alignment="BASELINE_CENTER" layoutX="37.0" layoutY="81.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="157.0" style="-fx-background-radius: 15;" text="Дерматовенеролог" />
+            <Button fx:id="doctor7" alignment="BASELINE_CENTER" layoutX="37.0" layoutY="291.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="157.0" style="-fx-background-radius: 15;" text="Терапевт" />
+            <Button fx:id="doctor3" alignment="BASELINE_CENTER" layoutX="37.0" layoutY="123.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="157.0" style="-fx-background-radius: 15;" text="Кардиолог" />
+            <Button fx:id="doctor4" alignment="BASELINE_CENTER" layoutX="37.0" layoutY="165.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="157.0" style="-fx-background-radius: 15;" text="Невролог" />
+            <Button fx:id="doctor5" alignment="BASELINE_CENTER" layoutX="37.0" layoutY="207.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="157.0" style="-fx-background-radius: 15;" text="Оториноларинголог" />
+            <Button fx:id="doctor6" alignment="BASELINE_CENTER" layoutX="37.0" layoutY="249.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="157.0" style="-fx-background-radius: 15;" text="Сомнолог" />
+            <Button fx:id="doctor1" alignment="BASELINE_CENTER" layoutX="37.0" layoutY="39.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="157.0" style="-fx-background-radius: 15;" text="Гастроэнтеролог" />
+            <Button fx:id="doctor8" alignment="BASELINE_CENTER" layoutX="37.0" layoutY="333.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="157.0" style="-fx-background-radius: 15;" text="Уролог" />
+            <ListView fx:id="dateview" layoutX="246.0" layoutY="46.0" prefHeight="243.0" prefWidth="212.0" style="-fx-background-radius: 5;" />
+            <ListView fx:id="timeview" layoutX="458.0" layoutY="46.0" prefHeight="243.0" prefWidth="122.0" style="-fx-background-radius: 5;" />
+            <TextField fx:id="client_name" layoutX="246.0" layoutY="300.0" prefHeight="25.0" prefWidth="157.0" promptText="Фамилия и имя" />
+            <TextField fx:id="date_recording" layoutX="423.0" layoutY="300.0" prefHeight="25.0" prefWidth="157.0" promptText="Дата &quot;2000-01-28&quot;" />
+            <TextField fx:id="time_recording" layoutX="423.0" layoutY="342.0" prefHeight="25.0" prefWidth="157.0" promptText="Время &quot;08:00&quot;" />
+            <TextField fx:id="client_phone" layoutX="246.0" layoutY="342.0" prefHeight="25.0" prefWidth="157.0" promptText="Телефон" />
+            <Button fx:id="recording" layoutX="423.0" layoutY="380.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="157.0" style="-fx-background-radius: 15;" text="Записаться" />
+            <Button fx:id="help" layoutX="37.0" layoutY="375.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="157.0" style="-fx-background-radius: 15;" text="Помощь в выборе врача">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Label layoutX="324.0" layoutY="18.0" text="Свободное время для записи:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="check" layoutX="246.0" layoutY="380.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="157.0" style="-fx-background-radius: 15;" text="Проверка записи" />
+         </children>
+      </AnchorPane>
+      <Label alignment="BASELINE_CENTER" layoutX="207.0" layoutY="14.0" text="Алгоритм здоровья">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label alignment="BASELINE_CENTER" layoutX="204.0" layoutY="48.0" text="лечебно-диагностический центр">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
